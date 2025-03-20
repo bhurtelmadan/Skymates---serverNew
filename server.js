@@ -16,7 +16,15 @@ const port = process.env.PORT || 3000;
 
 // Update CORS configuration
 const corsOptions = {
-  origin: ['https://flybuddyprod.vercel.app', 'http://localhost:4000', "https://www.maccopypasta.com/", "https://skymates.co", "https://www.skymates.co"],
+  origin: [
+    'https://flybuddyprod.vercel.app',
+    'http://localhost:4000',
+    'https://www.maccopypasta.com/',
+    'https://skymates.co',
+    'https://www.skymates.co',
+    'https://skymates-new-frontend-4ghdwafkp-bhurtelmadans-projects.vercel.app',
+    'https://skymates-new-frontend.vercel.app'
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
